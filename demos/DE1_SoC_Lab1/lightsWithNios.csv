@@ -1,0 +1,50 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# File: C:\Users\Diego\Desktop\CPET561\Labs\DE1_SoC_Lab1\lightsWithNios.csv
+# Generated on: Wed Aug 28 15:46:16 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+altera_reserved_tck,Input,,,,PIN_AC5,,,,,,,,,,,,,,
+altera_reserved_tdi,Input,,,,PIN_U8,,,,,,,,,,,,,,
+altera_reserved_tdo,Output,,,,PIN_AB9,,,,,,,,,,,,,,
+altera_reserved_tms,Input,,,,PIN_V9,,,,,,,,,,,,,,
+CLOCK_50,Input,,,,PIN_Y27,,,,,,,,,,,,,,
+KEY[3],Input,,,,PIN_AH8,,,,,,,,,,,,,,
+KEY[2],Input,,,,PIN_AG12,,,,,,,,,,,,,,
+KEY[1],Input,,,,PIN_AE13,,,,,,,,,,,,,,
+KEY[0],Input,,,,PIN_AB22,,,,,,,,,,,,,,
+LEDR[9],Output,,,,PIN_AD21,,,,,,,,,,,,,,
+LEDR[8],Output,,,,PIN_AG5,,,,,,,,,,,,,,
+LEDR[7],Output,,,,PIN_AF9,,,,,,,,,,,,,,
+LEDR[6],Output,,,,PIN_AG8,,,,,,,,,,,,,,
+LEDR[5],Output,,,,PIN_AF5,,,,,,,,,,,,,,
+LEDR[4],Output,,,,PIN_AA12,,,,,,,,,,,,,,
+LEDR[3],Output,,,,PIN_AC12,,,,,,,,,,,,,,
+LEDR[2],Output,,,,PIN_AF8,,,,,,,,,,,,,,
+LEDR[1],Output,,,,PIN_AF4,,,,,,,,,,,,,,
+LEDR[0],Output,,,,PIN_AF29,,,,,,,,,,,,,,
+SW[9],Input,,,,PIN_AB15,,,,,,,,,,,,,,
+SW[8],Input,,,,PIN_AG2,,,,,,,,,,,,,,
+SW[7],Input,,,,PIN_AD10,,,,,,,,,,,,,,
+SW[6],Input,,,,PIN_AC9,,,,,,,,,,,,,,
+SW[5],Input,,,,PIN_AG6,,,,,,,,,,,,,,
+SW[4],Input,,,,PIN_AF10,,,,,,,,,,,,,,
+SW[3],Input,,,,PIN_AE7,,,,,,,,,,,,,,
+SW[2],Input,,,,PIN_AD11,,,,,,,,,,,,,,
+SW[1],Input,,,,PIN_AD12,,,,,,,,,,,,,,
+SW[0],Input,,,,PIN_AE11,,,,,,,,,,,,,,

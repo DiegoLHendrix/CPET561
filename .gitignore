@@ -1,0 +1,17 @@
+Gen Docs/
+
+# Workspace generated folders
+.qsys_edit/
+
+# Project compilation generated folders
+output_files/
+project/
+
+# Ignore everything inside any nios_system folder
+**/nios_system/*
+
+# But don't ignore .keep files, so the folders remain tracked
+!nios_system/.gitignore
+
+**/software/*
+!software/.gitignore
