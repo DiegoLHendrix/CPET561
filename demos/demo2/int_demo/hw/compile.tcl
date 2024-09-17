@@ -13,12 +13,12 @@ load_package flow
 project_new $project_name
 set_global_assignment -name FAMILY Cyclone
 set_global_assignment -name DEVICE 5CSEMA5F31C6 
-set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name TOP_LEVEL_ENTITY int_demo
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output_files
 
 # 2] include your relative path files here
 set_global_assignment -name QIP_FILE ../../nios_system/synthesis/nios_system.qip
-set_global_assignment -name VHDL_FILE ../../src/top.vhd
+set_global_assignment -name VHDL_FILE ../../src/int_demo.vhd
 
 # 3] assign signals
 set_location_assignment PIN_AF14 -to CLOCK_50
@@ -39,24 +39,24 @@ set_location_assignment PIN_V17 -to LEDR[2]
 set_location_assignment PIN_W16 -to LEDR[1]
 set_location_assignment PIN_V16 -to LEDR[0]
 
-set_location_assignment PIN_AE12 -to SW[9]
-set_location_assignment PIN_AD10 -to SW[8]
-set_location_assignment PIN_AC9 -to SW[7]
-set_location_assignment PIN_AE11 -to SW[6]
-set_location_assignment PIN_AD12 -to SW[5]
-set_location_assignment PIN_AD11 -to SW[4]
-set_location_assignment PIN_AF10 -to SW[3]
-set_location_assignment PIN_AF9 -to SW[2]
-set_location_assignment PIN_AC12 -to SW[1]
-set_location_assignment PIN_AB12 -to SW[0]
+# set_location_assignment PIN_AE12 -to SW[9]
+# set_location_assignment PIN_AD10 -to SW[8]
+# set_location_assignment PIN_AC9 -to SW[7]
+# set_location_assignment PIN_AE11 -to SW[6]
+# set_location_assignment PIN_AD12 -to SW[5]
+# set_location_assignment PIN_AD11 -to SW[4]
+# set_location_assignment PIN_AF10 -to SW[3]
+# set_location_assignment PIN_AF9 -to SW[2]
+# set_location_assignment PIN_AC12 -to SW[1]
+# set_location_assignment PIN_AB12 -to SW[0]
 
-set_location_assignment PIN_AE26 -to HEX0[0]
-set_location_assignment PIN_AE27 -to HEX0[1]
-set_location_assignment PIN_AE28 -to HEX0[2]
-set_location_assignment PIN_AG27 -to HEX0[3]
-set_location_assignment PIN_AF28 -to HEX0[4]
-set_location_assignment PIN_AG28 -to HEX0[5]
-set_location_assignment PIN_AH28 -to HEX0[6]
+# set_location_assignment PIN_AE26 -to HEX0[0]
+# set_location_assignment PIN_AE27 -to HEX0[1]
+# set_location_assignment PIN_AE28 -to HEX0[2]
+# set_location_assignment PIN_AG27 -to HEX0[3]
+# set_location_assignment PIN_AF28 -to HEX0[4]
+# set_location_assignment PIN_AG28 -to HEX0[5]
+# set_location_assignment PIN_AH28 -to HEX0[6]
 
 # set_location_assignment PIN_AJ29 -to HEX1[0]
 # set_location_assignment PIN_AH29 -to HEX1[1]
