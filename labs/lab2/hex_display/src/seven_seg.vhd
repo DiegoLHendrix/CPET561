@@ -69,7 +69,7 @@ BEGIN
     END IF;
   END PROCESS synchReset_proc;
   reset_n <= key0_d3;
-  keys_sig(1) <= key0_d3;
+  keys_sig(1) <= key1_d3;
   
   --- heartbeat counter --------
   counter_proc : PROCESS (CLOCK_50) BEGIN
