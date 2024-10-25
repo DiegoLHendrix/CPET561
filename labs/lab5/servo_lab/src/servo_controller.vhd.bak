@@ -1,0 +1,134 @@
+-- This is the servo_controller_level VHDL file for the timer interrupt demo
+-- that is being done as a hands-on demo.  The NIOS System
+-- generated from the SOPC builder contains a NIOS II/s processor,
+-- a 32k on-chip memory, a JTAG UART, an 8-bit output PIO that will
+-- connect to the LEDs and a simple periodic interrupt 
+-- generator with a 1 sec. time-out period. 
+
+LIBRARY ieee; 
+USE ieee.std_logic_1164.all; 
+USE ieee.numeric_std.all;
+USE ieee.std_logic_unsigned.all; 
+
+ENTITY servo_controller IS
+GENERIC (
+  max_angle 	: INTEGER := 135;
+  neutral_angle : INTEGER := 90;
+  min_angle  	: INTEGER := 45
+  );
+PORT ( 	
+  CLOCK_50 : IN  STD_LOGIC;
+  reset	   : IN  STD_LOGIC;
+  write    : IN  STD_LOGIC;
+  address  : IN  STD_LOGIC;
+  -- writeData: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+  -- out_wave_export  : OUT STD_LOGIC;
+  irq	  : OUT STD_LOGIC;  --signal to interrupt the processor
+  LEDR: OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+  );
+END servo_controller;
+
+ARCHITECTURE Structure OF servo_controller IS
+
+  TYPE State IS (SWEEP_RIGHT, INT_RIGHT, SWEEP_LEFT, INT_LEFT);
+
+  SIGNAL CurrentState, NextState : State;
+  
+  SIGNAL angle_count : UNSIGNED(7 DOWNTO 0) := to_unsigned(neutral_angle, 8);
+  SIGNAL period_count : UNSIGNED(7 DOWNTO 0):= (OTHERS => '0');
+  
+  SIGNAL interrupt : STD_LOGIC;
+BEGIN
+  
+  -- Clock process
+  clk_state : PROCESS(CLOCK_50, reset)
+  BEGIN
+    IF (reset = '1') THEN
+      CurrentState <= SWEEP_RIGHT;
+    ELSIF RISING_EDGE(CLOCK_50) THEN
+      CurrentState <= NextState;
+    END IF;
+  END PROCESS clk_state;
+  
+  -- Period Counter Process
+  counter_proc : PROCESS (CLOCK_50, reset)
+  BEGIN
+    IF (reset = '1') THEN 
+      period_count <= (OTHERS => '0');
+    ELSIF (CLOCK_50'EVENT AND CLOCK_50 = '1') THEN
+      IF (period_count = 1000000) THEN
+        period_count <=(OTHERS => '0');
+      ELSE
+        period_count <= period_count + 1;
+      END IF; 
+    END IF;
+  END PROCESS counter_proc;
+  
+  -- State transitions
+  update_state : PROCESS(CurrentState, angle_count, interrupt)
+  BEGIN
+    CASE CurrentState IS
+	    
+      WHEN SWEEP_RIGHT =>
+	    IF (interrupt = '1')THEN
+  	      NextState <= INT_RIGHT;
+		ELSE 
+		  NextState <= SWEEP_RIGHT;
+	    END IF;
+      WHEN INT_RIGHT =>
+	    NextState <= SWEEP_LEFT;
+	  
+      WHEN SWEEP_LEFT =>
+	    NextState <= INT_LEFT;
+		
+      WHEN INT_LEFT =>
+	   NextState <= SWEEP_RIGHT;
+		
+      WHEN OTHERS =>
+        NextState <= SWEEP_RIGHT;  -- Default state assignment
+		
+    END CASE;
+  END PROCESS update_state;
+
+  -- Handle outputs
+  NS_decode : PROCESS(CurrentState, reset)
+  BEGIN
+    IF (reset = '1') THEN
+	  LEDR <= "00" & x"00";
+	  irq <= '0';
+    ELSE
+      CASE CurrentState IS
+        WHEN SWEEP_RIGHT =>
+		  LEDR <= "00" & x"01";
+		WHEN INT_RIGHT =>
+		  LEDR <= "00" & x"02";
+		  irq <= '0';
+        WHEN SWEEP_LEFT =>
+		  LEDR <= "00" & x"03";
+	    WHEN INT_LEFT =>
+		  LEDR <= "00" & x"04";
+      END CASE;
+    END IF;
+  END PROCESS NS_decode;
+
+  -- Increment angle process
+  increment_proc : PROCESS (CLOCK_50, reset)
+  BEGIN
+    IF (reset = '1') THEN
+	  angle_count <= to_unsigned(neutral_angle, angle_count'length);
+	  interrupt <= '0';  -- Clear interrupt
+    ELSIF RISING_EDGE(CLOCK_50) THEN
+	  IF (NextState = SWEEP_RIGHT) THEN
+	    IF (to_integer(angle_count) >= max_angle) THEN
+		  interrupt <= '1';
+		  angle_count <= to_unsigned(neutral_angle, angle_count'length);  -- Reset to neutral_angle after reaching max_angle
+	    ELSE
+		  angle_count <= angle_count + to_unsigned(5, angle_count'length);  -- Increment by 5
+			interrupt <= '0';  -- Clear interrupt
+		END IF;
+	  END IF;
+    END IF;
+END PROCESS increment_proc;
+
+  
+END Structure; 
