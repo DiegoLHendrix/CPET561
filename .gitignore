@@ -1,0 +1,21 @@
+GenDocs/
+weeks/
+
+# Quartus
+.qsys_edit/
+
+# hw
+output_files/
+project/
+*.bak
+
+# Sim/
+script/
+
+# nios_system/
+synthesis/
+
+# Eclipse
+.metadata/
+
+.vscode/

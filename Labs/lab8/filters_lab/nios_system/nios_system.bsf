@@ -1,0 +1,147 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 320 464)
+	(text "nios_system" (rect 123 -1 174 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 448 20 460)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 128 72)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "keys_export[3..0]" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "keys_export[3..0]" (rect 4 301 106 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 128 312)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 341 82 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 128 352)(line_width 1))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "switches_export[7..0]" (rect 0 0 83 12)(font "Arial" (font_size 8)))
+		(text "switches_export[7..0]" (rect 4 421 130 432)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 128 432)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "hex0_export[6..0]" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "hex0_export[6..0]" (rect 4 101 106 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 128 112)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "hex1_export[6..0]" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "hex1_export[6..0]" (rect 4 141 106 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 128 152)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "hex2_export[6..0]" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "hex2_export[6..0]" (rect 4 181 106 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 128 192)(line_width 3))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "hex4_export[6..0]" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "hex4_export[6..0]" (rect 4 221 106 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 128 232)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "hex5_export[6..0]" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "hex5_export[6..0]" (rect 4 261 106 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 128 272)(line_width 3))
+	)
+	(port
+		(pt 0 392)
+		(output)
+		(text "servo_ip_outwave" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "servo_ip_outwave" (rect 4 381 100 392)(font "Arial" (font_size 8)))
+		(line (pt 0 392)(pt 128 392)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 113 43 244 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 133 67 284 144)(font "Arial" (color 0 0 0)))
+		(text "hex0" (rect 102 83 228 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 107 302 224)(font "Arial" (color 0 0 0)))
+		(text "hex1" (rect 104 123 232 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 147 302 304)(font "Arial" (color 0 0 0)))
+		(text "hex2" (rect 102 163 228 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 187 302 384)(font "Arial" (color 0 0 0)))
+		(text "hex4" (rect 102 203 228 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 227 302 464)(font "Arial" (color 0 0 0)))
+		(text "hex5" (rect 102 243 228 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 267 302 544)(font "Arial" (color 0 0 0)))
+		(text "keys" (rect 102 283 228 579)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 307 302 624)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 99 323 228 659)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 133 347 308 704)(font "Arial" (color 0 0 0)))
+		(text "servo_ip" (rect 79 363 206 739)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "outwave" (rect 133 387 308 784)(font "Arial" (color 0 0 0)))
+		(text "switches" (rect 78 403 204 819)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 427 302 864)(font "Arial" (color 0 0 0)))
+		(text " nios_system " (rect 262 448 602 906)(font "Arial" ))
+		(line (pt 128 32)(pt 192 32)(line_width 1))
+		(line (pt 192 32)(pt 192 448)(line_width 1))
+		(line (pt 128 448)(pt 192 448)(line_width 1))
+		(line (pt 128 32)(pt 128 448)(line_width 1))
+		(line (pt 129 52)(pt 129 76)(line_width 1))
+		(line (pt 130 52)(pt 130 76)(line_width 1))
+		(line (pt 129 92)(pt 129 116)(line_width 1))
+		(line (pt 130 92)(pt 130 116)(line_width 1))
+		(line (pt 129 132)(pt 129 156)(line_width 1))
+		(line (pt 130 132)(pt 130 156)(line_width 1))
+		(line (pt 129 172)(pt 129 196)(line_width 1))
+		(line (pt 130 172)(pt 130 196)(line_width 1))
+		(line (pt 129 212)(pt 129 236)(line_width 1))
+		(line (pt 130 212)(pt 130 236)(line_width 1))
+		(line (pt 129 252)(pt 129 276)(line_width 1))
+		(line (pt 130 252)(pt 130 276)(line_width 1))
+		(line (pt 129 292)(pt 129 316)(line_width 1))
+		(line (pt 130 292)(pt 130 316)(line_width 1))
+		(line (pt 129 332)(pt 129 356)(line_width 1))
+		(line (pt 130 332)(pt 130 356)(line_width 1))
+		(line (pt 129 372)(pt 129 396)(line_width 1))
+		(line (pt 130 372)(pt 130 396)(line_width 1))
+		(line (pt 129 412)(pt 129 436)(line_width 1))
+		(line (pt 130 412)(pt 130 436)(line_width 1))
+		(line (pt 0 0)(pt 320 0)(line_width 1))
+		(line (pt 320 0)(pt 320 464)(line_width 1))
+		(line (pt 0 464)(pt 320 464)(line_width 1))
+		(line (pt 0 0)(pt 0 464)(line_width 1))
+	)
+)
