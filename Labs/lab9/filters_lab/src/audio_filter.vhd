@@ -60,16 +60,7 @@ BEGIN
 
   delay_reg(0) <= data_in;
 
-  filter_en_proc : PROCESS (write, address)
-  BEGIN
-    IF (write = '1') THEN
-      IF (address = '0') THEN
-        filter_en <= '1';
-      ELSE
-        filter_en <= '0';
-      END IF;
-    END IF;
-  END PROCESS;
+  filter_en <= write AND (NOT address);
 
   data_in_proc : PROCESS (CLOCK_50, reset_n)
   BEGIN

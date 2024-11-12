@@ -32,7 +32,7 @@ uint32 SAMPLE_CNT = 0; // keep track of which sample is being read from SDRAM
 uint32 CHANNELS = 0;
 volatile uint16 TOGGLE = 0;
 
-#define FIRST_TIME 1 // 1= means it is the first time running, so the file is loaded in SRAM
+#define FIRST_TIME 0 // 1= means it is the first time running, so the file is loaded in SRAM
 
 // set up pointers to peripherals
 uint16 *SdramPtr = (uint16 *)NEW_SDRAM_CONTROLLER_0_BASE;
@@ -159,7 +159,7 @@ void read_file(void)
 
 void sw_isr(void *context)
 {
-	*(SWPtr + 3) |= 0x03;
+	*(SWPtr + 3) &= ~0x03;
 	uint32 sw_val = *SWPtr;
 
 	if (sw_val == 0x01)

@@ -41,7 +41,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  11 .debug_abbrev 000074cd  00000000  00000000  00026bab  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_line   00007eaa  00000000  00000000  0002e078  2**0
+ 12 .debug_line   00007eab  00000000  00000000  0002e078  2**0
                   CONTENTS, READONLY, DEBUGGING
  13 .debug_frame  00001918  00000000  00000000  00035f24  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -339,7 +339,7 @@ SYMBOL TABLE:
 040108a0 g     F .text	00000018 fopen
 0401a560 g       *ABS*	00000000 __bss_start
 04011f48 g     F .text	00000128 memset
-0401071c g     F .text	00000090 main
+04010720 g     F .text	0000008c main
 0401a594 g     O .bss	00000004 alt_envp
 0401a57c g     O .bss	00000004 __malloc_max_total_mem
 040150bc g     F .text	00000060 altera_avalon_jtag_uart_write_fd
@@ -361,7 +361,7 @@ SYMBOL TABLE:
 040169e8 g     F .text	00000014 atexit
 040125bc g     F .text	00000060 _write_r
 04018980 g     O .rwdata	00000004 LEDRPtr
-04010608 g     F .text	00000114 sw_isr
+04010608 g     F .text	00000118 sw_isr
 04018988 g     O .rwdata	00000004 _impure_ptr
 0401a58c g     O .bss	00000004 alt_argc
 04012670 g     F .text	0000021c __sflush_r
@@ -1255,166 +1255,163 @@ void sw_isr(void *context)
  4010610:	df000215 	stw	fp,8(sp)
  4010614:	df000204 	addi	fp,sp,8
  4010618:	e13fff15 	stw	r4,-4(fp)
-	*(SWPtr + 3) |= 0x03;
+	*(SWPtr + 3) &= ~0x03;
  401061c:	d0a00617 	ldw	r2,-32744(gp)
  4010620:	10800304 	addi	r2,r2,12
  4010624:	d0e00617 	ldw	r3,-32744(gp)
  4010628:	18c00304 	addi	r3,r3,12
- 401062c:	18c00017 	ldw	r3,0(r3)
- 4010630:	18c000d4 	ori	r3,r3,3
- 4010634:	10c00015 	stw	r3,0(r2)
+ 401062c:	19000017 	ldw	r4,0(r3)
+ 4010630:	00ffff04 	movi	r3,-4
+ 4010634:	20c6703a 	and	r3,r4,r3
+ 4010638:	10c00015 	stw	r3,0(r2)
 	uint32 sw_val = *SWPtr;
- 4010638:	d0a00617 	ldw	r2,-32744(gp)
- 401063c:	10800017 	ldw	r2,0(r2)
- 4010640:	e0bffe15 	stw	r2,-8(fp)
+ 401063c:	d0a00617 	ldw	r2,-32744(gp)
+ 4010640:	10800017 	ldw	r2,0(r2)
+ 4010644:	e0bffe15 	stw	r2,-8(fp)
 
 	if (sw_val == 0x01)
- 4010644:	e0bffe17 	ldw	r2,-8(fp)
- 4010648:	10800058 	cmpnei	r2,r2,1
- 401064c:	10000c1e 	bne	r2,zero,4010680 <sw_isr+0x78>
+ 4010648:	e0bffe17 	ldw	r2,-8(fp)
+ 401064c:	10800058 	cmpnei	r2,r2,1
+ 4010650:	10000c1e 	bne	r2,zero,4010684 <sw_isr+0x7c>
 	{
 		printf("Low Pass Filter.\n");
- 4010650:	01010074 	movhi	r4,1025
- 4010654:	211b7404 	addi	r4,r4,28112
- 4010658:	40121900 	call	4012190 <puts>
+ 4010654:	01010074 	movhi	r4,1025
+ 4010658:	211b7404 	addi	r4,r4,28112
+ 401065c:	40121900 	call	4012190 <puts>
 		switch_select = 1;
- 401065c:	00800044 	movi	r2,1
- 4010660:	d0a70405 	stb	r2,-25584(gp)
+ 4010660:	00800044 	movi	r2,1
+ 4010664:	d0a70405 	stb	r2,-25584(gp)
 
 		// 0 offest means that it is writing to the data_in in the VHDL
 		// 1 offest means that it is writing to the filter_select in the VHDL
 		*(FilterPtr + 1) = 0;
- 4010664:	d0a00417 	ldw	r2,-32752(gp)
- 4010668:	10800084 	addi	r2,r2,2
- 401066c:	1000000d 	sth	zero,0(r2)
+ 4010668:	d0a00417 	ldw	r2,-32752(gp)
+ 401066c:	10800084 	addi	r2,r2,2
+ 4010670:	1000000d 	sth	zero,0(r2)
 		*LEDRPtr = 0x0F;
- 4010670:	d0a00717 	ldw	r2,-32740(gp)
- 4010674:	00c003c4 	movi	r3,15
- 4010678:	10c00015 	stw	r3,0(r2)
+ 4010674:	d0a00717 	ldw	r2,-32740(gp)
+ 4010678:	00c003c4 	movi	r3,15
+ 401067c:	10c00015 	stw	r3,0(r2)
 	{
 		switch_select = 0;
 		*LEDRPtr = 0x00;
 	}
 
 	return;
- 401067c:	00002106 	br	4010704 <sw_isr+0xfc>
+ 4010680:	00002106 	br	4010708 <sw_isr+0x100>
 		// 0 offest means that it is writing to the data_in in the VHDL
 		// 1 offest means that it is writing to the filter_select in the VHDL
 		*(FilterPtr + 1) = 0;
 		*LEDRPtr = 0x0F;
 	}
 	else if (sw_val == 0x02)
- 4010680:	e0bffe17 	ldw	r2,-8(fp)
- 4010684:	10800098 	cmpnei	r2,r2,2
- 4010688:	10000d1e 	bne	r2,zero,40106c0 <sw_isr+0xb8>
+ 4010684:	e0bffe17 	ldw	r2,-8(fp)
+ 4010688:	10800098 	cmpnei	r2,r2,2
+ 401068c:	10000d1e 	bne	r2,zero,40106c4 <sw_isr+0xbc>
 	{
 		printf("High Pass Filter.\n");
- 401068c:	01010074 	movhi	r4,1025
- 4010690:	211b7904 	addi	r4,r4,28132
- 4010694:	40121900 	call	4012190 <puts>
+ 4010690:	01010074 	movhi	r4,1025
+ 4010694:	211b7904 	addi	r4,r4,28132
+ 4010698:	40121900 	call	4012190 <puts>
 		switch_select = 2;
- 4010698:	00800084 	movi	r2,2
- 401069c:	d0a70405 	stb	r2,-25584(gp)
+ 401069c:	00800084 	movi	r2,2
+ 40106a0:	d0a70405 	stb	r2,-25584(gp)
 		*(FilterPtr + 1) = 1;
- 40106a0:	d0a00417 	ldw	r2,-32752(gp)
- 40106a4:	10800084 	addi	r2,r2,2
- 40106a8:	00c00044 	movi	r3,1
- 40106ac:	10c0000d 	sth	r3,0(r2)
+ 40106a4:	d0a00417 	ldw	r2,-32752(gp)
+ 40106a8:	10800084 	addi	r2,r2,2
+ 40106ac:	00c00044 	movi	r3,1
+ 40106b0:	10c0000d 	sth	r3,0(r2)
 		*LEDRPtr = 0xF0;
- 40106b0:	d0a00717 	ldw	r2,-32740(gp)
- 40106b4:	00c03c04 	movi	r3,240
- 40106b8:	10c00015 	stw	r3,0(r2)
+ 40106b4:	d0a00717 	ldw	r2,-32740(gp)
+ 40106b8:	00c03c04 	movi	r3,240
+ 40106bc:	10c00015 	stw	r3,0(r2)
 	{
 		switch_select = 0;
 		*LEDRPtr = 0x00;
 	}
 
 	return;
- 40106bc:	00001106 	br	4010704 <sw_isr+0xfc>
+ 40106c0:	00001106 	br	4010708 <sw_isr+0x100>
 		printf("High Pass Filter.\n");
 		switch_select = 2;
 		*(FilterPtr + 1) = 1;
 		*LEDRPtr = 0xF0;
 	}
 	else if (sw_val == 0x03)
- 40106c0:	e0bffe17 	ldw	r2,-8(fp)
- 40106c4:	108000d8 	cmpnei	r2,r2,3
- 40106c8:	1000081e 	bne	r2,zero,40106ec <sw_isr+0xe4>
+ 40106c4:	e0bffe17 	ldw	r2,-8(fp)
+ 40106c8:	108000d8 	cmpnei	r2,r2,3
+ 40106cc:	1000081e 	bne	r2,zero,40106f0 <sw_isr+0xe8>
 	{
 		printf("Both switches on.\n");
- 40106cc:	01010074 	movhi	r4,1025
- 40106d0:	211b7e04 	addi	r4,r4,28152
- 40106d4:	40121900 	call	4012190 <puts>
+ 40106d0:	01010074 	movhi	r4,1025
+ 40106d4:	211b7e04 	addi	r4,r4,28152
+ 40106d8:	40121900 	call	4012190 <puts>
 		switch_select = 0;
- 40106d8:	d0270405 	stb	zero,-25584(gp)
+ 40106dc:	d0270405 	stb	zero,-25584(gp)
 		*LEDRPtr = 0xFF;
- 40106dc:	d0a00717 	ldw	r2,-32740(gp)
- 40106e0:	00c03fc4 	movi	r3,255
- 40106e4:	10c00015 	stw	r3,0(r2)
+ 40106e0:	d0a00717 	ldw	r2,-32740(gp)
+ 40106e4:	00c03fc4 	movi	r3,255
+ 40106e8:	10c00015 	stw	r3,0(r2)
 	{
 		switch_select = 0;
 		*LEDRPtr = 0x00;
 	}
 
 	return;
- 40106e8:	00000606 	br	4010704 <sw_isr+0xfc>
+ 40106ec:	00000606 	br	4010708 <sw_isr+0x100>
 	{
 		printf("Both switches on.\n");
 		switch_select = 0;
 		*LEDRPtr = 0xFF;
 	}
 	else if (sw_val == 0x00)
- 40106ec:	e0bffe17 	ldw	r2,-8(fp)
- 40106f0:	1000041e 	bne	r2,zero,4010704 <sw_isr+0xfc>
+ 40106f0:	e0bffe17 	ldw	r2,-8(fp)
+ 40106f4:	1000041e 	bne	r2,zero,4010708 <sw_isr+0x100>
 	{
 		switch_select = 0;
- 40106f4:	d0270405 	stb	zero,-25584(gp)
+ 40106f8:	d0270405 	stb	zero,-25584(gp)
 		*LEDRPtr = 0x00;
- 40106f8:	d0a00717 	ldw	r2,-32740(gp)
- 40106fc:	10000015 	stw	zero,0(r2)
+ 40106fc:	d0a00717 	ldw	r2,-32740(gp)
+ 4010700:	10000015 	stw	zero,0(r2)
 	}
 
 	return;
- 4010700:	0001883a 	nop
  4010704:	0001883a 	nop
+ 4010708:	0001883a 	nop
 }
- 4010708:	e037883a 	mov	sp,fp
- 401070c:	dfc00117 	ldw	ra,4(sp)
- 4010710:	df000017 	ldw	fp,0(sp)
- 4010714:	dec00204 	addi	sp,sp,8
- 4010718:	f800283a 	ret
+ 401070c:	e037883a 	mov	sp,fp
+ 4010710:	dfc00117 	ldw	ra,4(sp)
+ 4010714:	df000017 	ldw	fp,0(sp)
+ 4010718:	dec00204 	addi	sp,sp,8
+ 401071c:	f800283a 	ret
 
-0401071c <main>:
+04010720 <main>:
 
 int main(void)
 {
- 401071c:	defffd04 	addi	sp,sp,-12
- 4010720:	dfc00215 	stw	ra,8(sp)
- 4010724:	df000115 	stw	fp,4(sp)
- 4010728:	df000104 	addi	fp,sp,4
+ 4010720:	defffd04 	addi	sp,sp,-12
+ 4010724:	dfc00215 	stw	ra,8(sp)
+ 4010728:	df000115 	stw	fp,4(sp)
+ 401072c:	df000104 	addi	fp,sp,4
 	printf("ESD-I Audio Demo Program Running.\n");
- 401072c:	01010074 	movhi	r4,1025
- 4010730:	211b8304 	addi	r4,r4,28172
- 4010734:	40121900 	call	4012190 <puts>
+ 4010730:	01010074 	movhi	r4,1025
+ 4010734:	211b8304 	addi	r4,r4,28172
+ 4010738:	40121900 	call	4012190 <puts>
 
 	// Enable interrupts
 	*(SWPtr + 2) |= 0x03;
- 4010738:	d0a00617 	ldw	r2,-32744(gp)
- 401073c:	10800204 	addi	r2,r2,8
- 4010740:	d0e00617 	ldw	r3,-32744(gp)
- 4010744:	18c00204 	addi	r3,r3,8
- 4010748:	18c00017 	ldw	r3,0(r3)
- 401074c:	18c000d4 	ori	r3,r3,3
- 4010750:	10c00015 	stw	r3,0(r2)
+ 401073c:	d0a00617 	ldw	r2,-32744(gp)
+ 4010740:	10800204 	addi	r2,r2,8
+ 4010744:	d0e00617 	ldw	r3,-32744(gp)
+ 4010748:	18c00204 	addi	r3,r3,8
+ 401074c:	18c00017 	ldw	r3,0(r3)
+ 4010750:	18c000d4 	ori	r3,r3,3
+ 4010754:	10c00015 	stw	r3,0(r2)
 
 	// Turn off all LEDs
 	*LEDRPtr = 0x00;
- 4010754:	d0a00717 	ldw	r2,-32740(gp)
- 4010758:	10000015 	stw	zero,0(r2)
-
-#if (FIRST_TIME)
-	read_file();
- 401075c:	40104080 	call	4010408 <read_file>
+ 4010758:	d0a00717 	ldw	r2,-32740(gp)
+ 401075c:	10000015 	stw	zero,0(r2)
 #endif
 
 	// Register interrupts
@@ -6210,7 +6207,7 @@ void alt_main (void)
  40148c8:	200d883a 	mov	r6,r4
  40148cc:	180b883a 	mov	r5,r3
  40148d0:	1009883a 	mov	r4,r2
- 40148d4:	401071c0 	call	401071c <main>
+ 40148d4:	40107200 	call	4010720 <main>
  40148d8:	e0bfff15 	stw	r2,-4(fp)
   close(STDOUT_FILENO);
  40148dc:	01000044 	movi	r4,1
