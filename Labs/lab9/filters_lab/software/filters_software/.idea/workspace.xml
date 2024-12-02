@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c60f06db-5743-43b0-be9f-da499a4c4bd1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/.cproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/.settings/language.settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/audioTones.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/audio_demo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/create-this-app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/filters_software.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/filters_software.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/filters_software.objdump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/obj/default/audio_demo.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/obj/default/audio_demo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software/system.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/.cproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/.force_relink" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/.settings/language.settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/alt_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/altera_nios2_gen2_irq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/io.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/nios2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/os/alt_flag.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/os/alt_hooks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/os/alt_sem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/os/alt_syscall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_alarm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_busy_sleep.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_dev_llist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_exception_handler_registry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_iic_isr_register.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_irq_table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_legacy_irq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/alt_no_error.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/priv/nios2_gmon_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_alarm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_cache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_dev.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_dma.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_dma_dev.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_driver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_errno.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_exceptions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_flash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_flash_dev.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_flash_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_irq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_irq_entry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_license_reminder_ucosii.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_llist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_load.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_log_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_set_args.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_sim.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_stack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_stdio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_sys_init.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_sys_wrappers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_timestamp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/alt_warning.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/ioctl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/inc/sys/termios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_alarm_start.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_busy_sleep.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_close.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dcache_flush.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dcache_flush_all.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dcache_flush_no_writeback.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dev.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dev_llist_insert.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dma_rxchan_open.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_dma_txchan_open.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_do_ctors.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_do_dtors.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_ecc_fatal_entry.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_ecc_fatal_exception.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_env_lock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_environ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_errno.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_exception_entry.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_exception_muldiv.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_exception_trap.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_execve.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_exit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_fcntl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_fd_lock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_fd_unlock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_find_dev.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_find_file.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_flash_dev.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_fork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_fs_reg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_fstat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_get_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_getchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_getpid.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_gettod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_gmon.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_icache_flush.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_icache_flush_all.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_iic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_iic_isr_register.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_instruction_exception_entry.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_instruction_exception_register.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_io_redirect.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_ioctl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_irq_entry.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_irq_handler.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_irq_register.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_irq_vars.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_isatty.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_kill.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_link.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_load.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_log_macro.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_log_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_lseek.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_malloc_lock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_mcount.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_open.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_putchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_putcharbuf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_putstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_read.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_release_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_remap_cached.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_remap_uncached.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_rename.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_sbrk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_settod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_software_exception.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_stat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_tick.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_times.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_uncached_free.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_uncached_malloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_unlink.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_usleep.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_wait.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/alt_write.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/altera_nios2_gen2_irq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/HAL/src/crt0.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/alt_sys_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/create-this-bsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_jtag_uart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_jtag_uart_fd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_pio_regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_sysid_qsys.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_sysid_qsys_regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_avalon_timer_regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_hostfs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_up_avalon_audio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_up_avalon_audio_and_video_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_up_avalon_audio_and_video_config_regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/inc/altera_up_avalon_audio_regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_jtag_uart_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_jtag_uart_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_jtag_uart_ioctl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_jtag_uart_read.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_jtag_uart_write.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_sysid_qsys.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_timer_sc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_timer_ts.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_avalon_timer_vars.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_hostfs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_up_avalon_audio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/drivers/src/altera_up_avalon_audio_and_video_config.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/libhal_bsp.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/linker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/linker.x" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/mem_init.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/memory.gdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_alarm_start.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_alarm_start.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_busy_sleep.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_busy_sleep.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_close.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_close.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dcache_flush.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dcache_flush.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dcache_flush_all.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dcache_flush_all.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dcache_flush_no_writeback.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dcache_flush_no_writeback.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dev.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dev.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dev_llist_insert.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dev_llist_insert.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dma_rxchan_open.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dma_rxchan_open.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dma_txchan_open.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_dma_txchan_open.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_do_ctors.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_do_ctors.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_do_dtors.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_do_dtors.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_ecc_fatal_entry.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_ecc_fatal_entry.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_ecc_fatal_exception.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_ecc_fatal_exception.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_env_lock.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_env_lock.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_environ.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_environ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_errno.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_errno.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exception_entry.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exception_entry.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exception_muldiv.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exception_muldiv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exception_trap.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exception_trap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_execve.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_execve.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exit.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_exit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fcntl.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fcntl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fd_lock.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fd_lock.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fd_unlock.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fd_unlock.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_find_dev.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_find_dev.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_find_file.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_find_file.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_flash_dev.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_flash_dev.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fork.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fork.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fs_reg.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fs_reg.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fstat.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_fstat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_get_fd.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_get_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_getchar.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_getchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_getpid.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_getpid.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_gettod.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_gettod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_gmon.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_gmon.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_icache_flush.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_icache_flush.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_icache_flush_all.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_icache_flush_all.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_iic.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_iic.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_iic_isr_register.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_iic_isr_register.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_instruction_exception_entry.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_instruction_exception_entry.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_instruction_exception_register.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_instruction_exception_register.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_io_redirect.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_io_redirect.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_ioctl.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_ioctl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_entry.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_entry.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_handler.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_handler.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_register.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_register.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_vars.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_irq_vars.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_isatty.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_isatty.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_kill.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_kill.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_link.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_link.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_load.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_load.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_log_macro.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_log_macro.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_log_printf.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_log_printf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_lseek.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_lseek.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_main.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_malloc_lock.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_malloc_lock.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_mcount.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_mcount.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_open.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_open.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_printf.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_printf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_putchar.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_putchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_putcharbuf.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_putcharbuf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_putstr.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_putstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_read.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_read.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_release_fd.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_release_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_remap_cached.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_remap_cached.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_remap_uncached.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_remap_uncached.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_rename.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_rename.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_sbrk.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_sbrk.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_settod.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_settod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_software_exception.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_software_exception.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_stat.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_stat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_tick.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_tick.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_times.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_times.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_uncached_free.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_uncached_free.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_uncached_malloc.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_uncached_malloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_unlink.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_unlink.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_usleep.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_usleep.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_wait.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_wait.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_write.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/alt_write.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/altera_nios2_gen2_irq.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/altera_nios2_gen2_irq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/crt0.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/HAL/src/crt0.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/alt_sys_init.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/alt_sys_init.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_fd.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_init.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_init.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_ioctl.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_ioctl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_read.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_read.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_write.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_jtag_uart_write.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_sysid_qsys.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_sysid_qsys.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_timer_sc.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_timer_sc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_timer_ts.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_timer_ts.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_timer_vars.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_avalon_timer_vars.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_hostfs.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_hostfs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_up_avalon_audio.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_up_avalon_audio.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_up_avalon_audio_and_video_config.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/obj/drivers/src/altera_up_avalon_audio_and_video_config.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/public.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/settings.bsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lab10/filters_lab/software/filters_software_bsp/system.h" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DiegoLHendrix"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:DiegoLHendrix/CPET561.git",
+    "accountId": "1e3d9514-c4ab-46b9-9c45-99815d5693c9"
+  }
+}]]></component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2pX7eeMLF4zEKiu9mauCjfIHtoT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c60f06db-5743-43b0-be9f-da499a4c4bd1" name="Changes" comment="" />
+      <created>1732900662684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732900662684</updated>
+      <workItem from="1732900663841" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
