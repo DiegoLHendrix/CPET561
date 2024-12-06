@@ -26,6 +26,15 @@ typedef signed long sint32;	   // signed 32 bit values
 typedef unsigned long uint32;  // unsigned 32 bit values
 typedef float real32;		   // 32 bit real values
 
+
+// Global variables
+#define MAX_SAMPLES 0x80000 // 0x80000 max sample data (16 bits each) for SDRAM
+
+uint32 ECHO_CNT = 0;   // index into buffer
+uint32 SAMPLE_CNT = 0; // keep track of which sample is being read from SDRAM
+uint32 CHANNELS = 0;
+volatile uint16 TOGGLE = 0;
+
 // set up pointers to peripherals
 uint16 *SdramPtr = (uint16 *)NEW_SDRAM_CONTROLLER_0_BASE;
 uint32 *AudioPtr = (uint32 *)AUDIO_0_BASE;
@@ -37,16 +46,89 @@ uint16 *FilterPtr = (uint16 *)AUDIO_FILTER_IP_0_BASE;
 uint32 *KEYPtr = (uint32 *)KEY_BASE;
 volatile uint32 *SWPtr = (uint32 *)SW_BASE;
 uint32 *LEDRPtr = (uint32 *)LEDR_BASE;
+uint8 switch_select = 0;
+
+void timer_isr(void *context)
+{
+	uint16 right_sample, left_sample;
+
+	// Variables to hold the samples coming out of the filters
+	uint16 filtered_right_sample, filtered_left_sample;
+
+	// clear timer interrupt
+	*TimerPtr = 0;
+	if (TOGGLE == 0)
+	{
+		TOGGLE = 1;
+	}
+	else
+	{
+		TOGGLE = 0;
+	}
+	*PinPtr = TOGGLE;
+
+	if (SAMPLE_CNT < MAX_SAMPLES)
+	{
+		left_sample = SdramPtr[SAMPLE_CNT++];
+
+		if (switch_select == 0)
+		{
+			// Low pass filtering
+			*(FilterPtr + 0) = SdramPtr[SAMPLE_CNT];
+			filtered_left_sample = *FilterPtr;
+
+			AudioPtr[3] = *FilterPtr; // in stereo, output to both sides
+			AudioPtr[2] = *FilterPtr;
+		}
+		else // this will allow continuous looping of audio. comment this out to only play once
+		{
+			SAMPLE_CNT = 0;
+		}
+
+		return;
+	}
+}
+
+void sw_isr(void *context)
+{
+	*(SWPtr + 3) &= ~0x03;
+	uint32 sw_val = *SWPtr;
+
+	printf("Low Pass Filter.\n");
+	switch_select = 1;
+
+	// 0 offest means that it is writing to the data_in in the VHDL
+	// 1 offest means that it is writing to the filter_select in the VHDL
+	*(FilterPtr + 1) = 0;
+	*LEDRPtr = 0x0F;
+	return;
+}
 
 int main(void)
 {
+	printf("ESD-I Audio Demo Program Running.\n");
+
+	// Enable interrupts
+	*(SWPtr + 2) |= 0x03;
+
+	// Turn off all LEDs
+	*LEDRPtr = 0x00;
+
+	// Register interrupts
+	// Use legacy register because the audio core forces the system to legacy
+	// alt_irq_register(TIMER_0_IRQ,0,timer_isr);
+	alt_ic_isr_register(TIMER_0_IRQ_INTERRUPT_CONTROLLER_ID, TIMER_0_IRQ, timer_isr, 0, 0);
+	alt_ic_isr_register(SW_IRQ_INTERRUPT_CONTROLLER_ID, SW_IRQ, sw_isr, 0, 0);
+	// initialize timer interrupt 48Khz
+	TimerPtr[4] = 3;
+
 	alt_up_audio_dev *audio_dev;
 	/* used for audio record/playback */
 	unsigned int l_buf;
 	unsigned int r_buf;
 
 	// open the Audio port
-	audio_dev = alt_up_audio_open_dev("/dev/Audio");
+	audio_dev = alt_up_audio_open_dev("/dev/audio_0");
 	if (audio_dev == NULL)
 		printf("Error: could not open audio device \n");
 	else
@@ -55,7 +137,7 @@ int main(void)
 	/* read and echo audio data */
 	while (1)
 	{
-		unsigned int fifospace = alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_RIGHT);
+		int fifospace = alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_RIGHT);
 		if (fifospace > 0) /* Check if data is available. */
 		{
 			/* Read audio buffer. */
