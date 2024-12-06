@@ -19,7 +19,23 @@ low_pass_values = [
     0.0025,
 ]
 
-high_pass_values = [0.0019, -0.0031, -0.0108, 0.0, 0.0407]
+high_pass_values = [
+    0.0019,
+    -0.0031,
+    -0.0108,
+    0.0,
+    0.0407,
+    0.0445,
+    -0.0807,
+    -0.2913,
+    0.5982,
+    -0.2913,
+    -0.0807,
+    0.0,
+    -0.0108,
+    -0.0031,
+    0.0019,
+]
 
 
 def decimal_to_hex(val):
@@ -37,29 +53,18 @@ def decimal_to_hex(val):
     return hex_value
 
 
-# print("\n-- low pass values")
-# num = 0
-# for i in low_pass_values:
-#     print(f"datab_signals({num})  <= {decimal_to_hex(i)};")
-#     num = num + 1
-
-
-# print("\n-- high pass values")
-# num = 0
-# for i in high_pass_values:
-#     print(f"datab_signals({num})  <= {decimal_to_hex(i)};")
-#     num = num + 1
-
-
-def float_to_hex(val):
-    temp = val * (2**15)
-    temp = f'X"{temp:04X}"'
-
-    return temp
+########################################
+# Outputs are NOT Completely accurate #
+########################################
+print("\n-- low pass values")
+num = 0
+for i in low_pass_values:
+    print(f"datab_signals({num})  <= {decimal_to_hex(i)};")
+    num = num + 1
 
 
 print("\n-- high pass values")
 num = 0
 for i in high_pass_values:
-    print(f"{i} = {float_to_hex(i)};")
+    print(f"datab_signals({num})  <= {decimal_to_hex(i)};")
     num = num + 1
